@@ -1,5 +1,6 @@
 function [] = compress_image_tutorial(name)
-  % 
+  % a nice SVD visualisation - image compressing
+  
   I = imread(name);
 
   normalSize = prod(size(I));
