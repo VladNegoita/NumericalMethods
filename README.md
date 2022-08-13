@@ -6,7 +6,7 @@ This repository contains the following chapters:
 
 	1. LU factorizations
 
-		- Doo_Little
+		- Doo Little
 		- Crout
 		- Cholesky
 
@@ -15,6 +15,12 @@ This repository contains the following chapters:
 		- upper triangular coefficient matrix
 		- lower triangular coefficient matrix
 
-	3.
+	3. QR factorizations
 
-#### Next Chapter ####
+		- Givens
+		- Gram-Schmidt
+		- Gram-Schmidt optimised
+
+#### Other ####
+
+	- SVD for image compression
