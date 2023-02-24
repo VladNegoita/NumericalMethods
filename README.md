@@ -2,6 +2,12 @@
 
 This repository contains the following chapters:
 
+#### Introduction ####
+
+	1. Scripts
+	2. Functions
+	3. Vectorisation
+
 #### Systems of Linear Equations ####
 
 	1. LU factorizations
