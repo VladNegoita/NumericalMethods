@@ -27,7 +27,14 @@ This repository contains the following chapters:
 		- Gram-Schmidt
 		- Gram-Schmidt optimised
 		
-	4. Iterative Methods
+
+	4. Gaussian Elimination
+
+		- Partial pivoting (GPP)
+		- Partial pivoting (scaled) (GPPS)
+		- Total pivoting (GPT)
+
+	5. Iterative Methods
 	
 		- Jacobi
 		- Gauss-Seidel
