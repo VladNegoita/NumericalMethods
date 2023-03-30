@@ -26,6 +26,12 @@ This repository contains the following chapters:
 		- Givens
 		- Gram-Schmidt
 		- Gram-Schmidt optimised
+		
+	4. Iterative Methods
+	
+		- Jacobi
+		- Gauss-Seidel
+		- SOR
 
 #### Other ####
 
