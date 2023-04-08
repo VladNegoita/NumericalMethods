@@ -7,7 +7,7 @@ p = 3
 
 % in octave, we work with matrices and vectors a lot:
 
-v = [1, 2, 3]
+v = [1 2 3]
 
 % ---> row vector
 
@@ -39,6 +39,8 @@ A = magic(p)
 
 D = diag(v)
 
+vv = diag(D)
+
 % diagonal matrix with the specified elements on its main diagonal
 
 
@@ -48,7 +50,7 @@ subA = A([1, 3], [2, 3])
 % ---> submatrix using the specified rows and columns
 
 
-R = rand(p, p);
+R = rand(p, p)
 
 
 % ---> matrix of the specified shape in [0, 1]
@@ -74,4 +76,4 @@ Z = X * Y
 
 ZZ = X .* Y
 
-% git it?
+% got it?

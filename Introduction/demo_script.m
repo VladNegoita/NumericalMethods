@@ -12,10 +12,9 @@ v = [1, 2, 3, 2]
 
 
 % function call
-[a, b] = demo_function(v);
+[v, ~] = demo_function(v);
 
 
-disp(a);
 disp(v);
 
 % ---> we can have multiple parameters and multiple return values

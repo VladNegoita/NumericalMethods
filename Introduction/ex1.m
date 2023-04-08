@@ -15,9 +15,8 @@ for n=ns
 	y = 2 * rand(n, 1) - 1;
 	mask = (x .^ 2 + y .^ 2) <= 1;
 	
-	curr_aprox = (4 * sum(mask)) / n;
-	pi_aprox = [pi_aprox; (4 * sum(mask)) / n];
-	pi_aprox;
+	curr_aprox = (4 * nnz(mask)) / n;
+	pi_aprox = [pi_aprox; curr_aprox];
 	
 endfor
 

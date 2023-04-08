@@ -11,9 +11,6 @@ function [x, cnt_iter] = jacobi (A, b, x0, tol=1e-5, max_iter=100)
 		endfor
 		
 		cnt_iter += 1;
-		
-		disp(new_x);
-		disp("\n\n");
 
 		if norm(new_x - x) < tol
 			break;

@@ -1,5 +1,5 @@
-function [v, x] = sort5(v)
-	% sorts v and returns [5, v]
+function [v, x] = demo_function(v)
+	% sorts v and returns [v, 5]
 	
 	v = sort(v);
 	x = 5;

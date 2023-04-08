@@ -12,7 +12,7 @@ function [Q, R] = Givens (A, err = 1e-15)
 				continue
 			endif
 		  
-			r = sqrt(A(i, i) ^ 2 + A(j, i) ^ 2);
+			r = norm([A(i, i), A(j, i)], 2);
 			c = A(i, i) / r;
 			s = A(j, i) / r;
 		  

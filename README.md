@@ -40,6 +40,18 @@ This repository contains the following chapters:
 		- Gauss-Seidel
 		- SOR
 
+
+#### Non Linear Equations ####
+
+	1. Interval methods
+
+		- Bisection
+		- Secant
+
+	2. Initial solution aproximation
+
+		- Newton-Raphson
+
 #### Other ####
 
 	- SVD for image compression
