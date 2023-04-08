@@ -48,7 +48,7 @@ This repository contains the following chapters:
 		- Bisection
 		- Secant
 
-	2. Initial solution aproximation
+	2. Initial approximation
 
 		- Newton-Raphson
 
