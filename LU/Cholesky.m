@@ -1,7 +1,6 @@
 function L = Cholesky (A)
 	% A is considered to be both symetric and positive definite
 	% L = lower triangular matrix
-	% U = upper triangular matrix, with ones on diag
 
 	[n, ~] = size(A);
 
