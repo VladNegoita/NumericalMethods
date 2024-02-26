@@ -1,6 +1,6 @@
 clc; close all; clear;
 
-% we will compare vectorised and normal operations by measuring their execution 
+% we will compare vectorised and normal operations by measuring their execution
 % times:
 
 n = 5e5;
@@ -26,5 +26,7 @@ time2 = toc();
 
 time1
 time2
+
+printf("improvement = %f\n", time2 / time1);
 
 norm(ans1 - ans2)
