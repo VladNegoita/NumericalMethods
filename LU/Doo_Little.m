@@ -1,22 +1,24 @@
 function [L, U] = Doo_Little (A)
-	% L = lower triangular matrix
-	% U = upper triangular matrix, with ones on diag
+  % A = square matrix
+	% L = lower triangular matrix, with ones on diagonal
+	% U = upper triangular matrix
+  %   such that A = L * U
 
 	[n, ~] = size(A);
 
 	L = eye(n);
 	U = zeros(n, n);
 
-	for p = 1:n
-		s = L(p, 1:p-1) * U(1:p-1, p);
-		U(p, p) = A(p, p) - s;
-
-		for i = p+1:n
-			ss = L(p, 1:p-1) * U(1:p-1, i);
-			U(p, i) = A(p, i) - ss;
-	  
-			sss = L(i, 1:p-1) * U(1:p-1, p);
-			L(i, p) = (A(i, p) - sss) / U(p, p);
-		endfor
+	for i = 1:n
+    for j =1:n
+      % A(i, j) = L(i, 1:p) * U (1:p, j)
+      % where p = min(i, j)
+      if i <= j
+        U(i, j) = A(i, j) - L(i, 1 : (i - 1)) * U(1 : (i - 1), j);
+      else
+        L(i, j) = (A(i, j) - L(i, 1 : (j - 1)) * U(1 : (j - 1), j)) / U(j, j);
+      endif
+    endfor
 	endfor
 endfunction
+
