@@ -1,5 +1,5 @@
 function average_case_error_testing(norm_p = 2)
-  ns = [3, 5, 10, 25, 50, 100, 125, 250];
+  ns = [3, 5, 10, 25, 50, 100, 125, 250, 500];
   iterations = 3;
 
   gpp_err = [];
@@ -14,8 +14,8 @@ function average_case_error_testing(norm_p = 2)
     curr_best = 0;
 
     for i = 1 : iterations
-      A = 100 * (rand(n, n) - 0.5);
-      b = 100 * (rand(n, 1) - 0.5);
+      A = diag(rand(n, 1) * 10000) * (rand(n, n) - 0.5);
+      b = diag(rand(n, 1) * 10000) * (rand(n, 1) - 0.5);
 
       x_gpp = gpp(A, b);
       x_gpps = gpps(A, b);
