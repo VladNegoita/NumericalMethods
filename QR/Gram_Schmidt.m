@@ -1,8 +1,8 @@
 function [Q, R] = Gram_Schmidt(A)
-  	% A -> matrix (viewed as a list o column vectors)
-	% Q -> ortogonalised vector list (and normalised)
-	% R -> upper triangular matrix -> helps to reconstitute the A matrix:
-	%	-> A = Q * R
+	% A = square matrix
+	% A = Q * R such that
+  %   Q = orthogonal
+  %   R = upper triangular
 
 	[n, m] = size(A);
 	R = zeros(n, m);

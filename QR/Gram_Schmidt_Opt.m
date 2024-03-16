@@ -1,9 +1,9 @@
 function [Q, R] = Gram_Schmidt_Opt(A)
-	% A -> matrix (viewed as a list o column vectors)
-	% Q -> ortogonalised vector list (and normalised)
-	% R -> upper triangular matrix -> helps to reconstitute the A matrix:
-	%	-> A = Q * R
-	
+	% A = square matrix
+	% A = Q * R such that
+  %   Q = orthogonal
+  %   R = upper triangular
+
 	[n, m] = size(A);
 	R = zeros(n, m);
 
@@ -12,11 +12,11 @@ function [Q, R] = Gram_Schmidt_Opt(A)
 		A(:, i) = A(:, i) / R(i, i);
 
 		for j = i+1:m
-			R(j, i) = A(:, j)' * A(:, i);
-			A(:, j) -= A(:, i) * R(j, i);
+			R(i, j) = A(:, j)' * A(:, i);
+			A(:, j) -= A(:, i) * R(i, j);
 		endfor
 	endfor
-	
-	Q = A
-	
+
+	Q = A;
+
 endfunction
