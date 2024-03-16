@@ -6,7 +6,7 @@ function x = gpps (A, b)
 		max_index = i;
 		max_value = A(i, i) / norm(A(i, i : n), inf);
 		for j = i+1:n
-			curr_value = A(j, i) / norm(A(j, i : n), inf);
+			curr_value = abs(A(j, i)) / norm(A(j, i : n), inf);
 			if  curr_value > max_value
 				max_index = j;
 				max_value = curr_value;

@@ -6,10 +6,9 @@ function x = gpp (A, b)
 		max_index = i;
 		max_value = A(i, i);
 		for j = (i + 1) : n
-			curr_value = A(j, i);
-			if  curr_value > max_value
+			if  abs(A(j, i)) > max_value
 				max_index = j;
-				max_value = curr_value;
+				max_value = abs(A(j, i));
 			endif
 		endfor
 

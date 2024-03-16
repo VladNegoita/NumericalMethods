@@ -10,7 +10,7 @@ function x = gpt (A, b)
 
 		for j = i:n
 			for k = i:n
-				if A(j, k) > A(max_line, max_column)
+				if abs(A(j, k)) > A(max_line, max_column)
 					max_line = j;
 					max_column = k;
 				endif
