@@ -1,5 +1,5 @@
 function average_case_error_testing(norm_p = 2)
-  ns = [3, 5, 10, 25, 50, 100, 125, 250, 500];
+  ns = [3, 5, 10, 25, 50, 100, 125, 250];
   iterations = 3;
 
   gpp_err = [];
