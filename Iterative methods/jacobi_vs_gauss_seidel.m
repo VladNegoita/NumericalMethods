@@ -17,8 +17,8 @@ function jacobi_vs_gauss_seidel(A, b, x0, iters = 10)
     error_gauss_seidel(i) = norm(solution - x_gauss_seidel);
   endfor
 
-  plot(error_jacobi, 1 : iters);
+  plot(1 : iters, error_jacobi);
   hold on;
-  plot(error_gauss_seidel, 1 : iters);
+  plot(1 : iters, error_gauss_seidel);
 
 endfunction
