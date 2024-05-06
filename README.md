@@ -15,6 +15,7 @@ This repository contains the following chapters:
 	- Doo Little
 	- Crout
 	- Cholesky
+	- Generators for manual computations
 
 
 2. Triangular system of equations
@@ -43,6 +44,9 @@ This repository contains the following chapters:
 	- Jacobi
 	- Gauss-Seidel
 	- SOR
+	- Jacobi vs Gauss Seidel convergence comparison
+	- SOR analysis for figuring the optimal parameter w
+	- visualizer for the methods
 
 
 #### Non Linear Equations ####
@@ -57,6 +61,7 @@ This repository contains the following chapters:
 2. Initial approximation
 
 	- Newton-Raphson
+	- Newton (Newton-Raphson extension for Systems of Non-Linear equations)
 
 
 #### EigenValues & EigenVectors
@@ -68,11 +73,14 @@ This repository contains the following chapters:
 	- Inverse Power Method (Shifted)
 	- Deflation
 	- Wielandt deflation
+	- Specter Visualization
 
 
 2. QR algorithm - Schur form
 
 	- Simple QR
+	- QR + shift1
+	- QR + shift2
 
 
 #### Other ####
